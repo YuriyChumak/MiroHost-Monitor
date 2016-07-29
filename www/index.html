@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="product" content="MiroHost Monitor">
+    <meta name="description" content="Mobile monitoring app for MiroHost customers">
+    <meta name="author" content="Yuriy V. Chumak, Ukraine, Kiev">
+
+    <link href="css/restyle.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/restyle.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="js/mm.js"></script>
+    <script type="text/javascript" src="js/mm3d.js"></script>
+    <script type="text/javascript" src="js/canvasjs.min.js"></script>
+</head>
+
+<body>
+
+<div class="container" style="width: 100%;">
+        <nav class="accordion" data-role="accordion" width="100%">
+            <div style="position: fixed; z-index: 100; background-color: #fff; width: 100%; top: 0; padding-top: 30px;"><img src="img/gauge.png" width="100px"><img src="img/logo.svg" width="200px"></div>
+            <div class="accordion-frame" style="margin-top: 120px;" active>
+                <a href="#id_1" class="accordion-frame-heading">Сервисы</a>
+                <div class="accordion-frame-content" id="id_1">
+                    <div id="icmpChart" style="height: 300px; width: 100%;"></div>
+                    <div id="httpChart" style="height: 300px; width: 100%;"></div>
+                    <div id="httpsChart" style="height: 300px; width: 100%;"></div>
+                    <div id="mysqlChart" style="height: 300px; width: 100%;"></div>
+                </div>
+            </div>
+            <div class="accordion-frame">
+                <a href="#id_2" class="accordion-frame-heading">Память</a>
+                <div class="accordion-frame-content" id="id_2">
+                    <div id="mem_now" align="center"></div>
+                    <div id="memChart" style="height: 300px; width: 100%;"></div>
+                </div>
+            </div>
+            <div class="accordion-frame">
+                <a href="#id_3" class="accordion-frame-heading">Процессор</a>
+                <div class="accordion-frame-content" id="id_3">
+                    <div id="cpu_now" align="center"></div>
+                    <div id="cpuChart" style="height: 300px; width: 100%;"></div>
+                    </div>
+            </div>
+            <div class="accordion-frame">
+                <a href="#id_4" class="accordion-frame-heading">Диск</a>
+                <div class="accordion-frame-content" id="id_4">
+                    <div id="spaceColumn" style="height: 300px; width: 100%;"></div>
+                    <div id="spaceChart" style="height: 300px; width: 100%;"></div>
+                </div>
+            </div>
+            <div class="accordion-frame">
+                <a href="#id_5" class="accordion-frame-heading">Посещяемость</a>
+                <div class="accordion-frame-content" id="id_5">
+                    <div id="pieChart" style="height: 300px; width: 100%;"></div>
+                </div>
+            </div>
+            <div class="accordion-frame">
+                <a href="#id_6" class="accordion-frame-heading">Посещяемость 3D</a>
+                <div class="accordion-frame-content" id="id_6">
+                    <div id="attendance3d" align="center" style="height: 320px; width: 100%;"></div>
+                </div>
+            </div>
+            <div class="accordion-frame">
+                <a href="#id_7" class="accordion-frame-heading">Карта</a>
+                <div class="accordion-frame-content" id="id_7">
+                    <div id="geochart" style="height: 100%; width: 100%;"></div>
+                </div>
+            </div>
+            <div class="accordion-frame">
+                <a href="#id_8" class="accordion-frame-heading">Лента событий</a>
+                <div class="accordion-frame-content" id="id_8">
+                    <div id="logMessages"></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+</body>
+</html>

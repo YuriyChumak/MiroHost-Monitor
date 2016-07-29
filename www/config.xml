@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.phonegap.Mirohost.Monitor" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>MiroHost Monitor</name>
+    <description>
+        eVPS monitor
+    </description>
+    <author email="yuriy.chumak@gmail.com" href="http://MiroHost.net">
+        MiroHost Team
+    </author>
+    <content src="index.html" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="14" />
+    <icon src="www/img/gauge.png" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <engine name="android" spec="~5.2.1" />
+</widget>
